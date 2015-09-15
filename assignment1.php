@@ -49,7 +49,7 @@ $beer = 10;
 do
 {
 	echo "<br>";
-	echo $beer . " bottles of beer on the wall, " . $beer . " bottles of beer!";
+	echo $beer . " bottles of beer on the wall, " . ($beer-1) . " bottles of beer!";
 	--$beer;	
 } while ($beer > 0);
 echo "<br>";
