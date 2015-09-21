@@ -50,6 +50,7 @@ do
 {
 	echo "<br>";
 	echo $beer . " bottles of beer on the wall, " . $beer . " bottles of beer!";
+	echo "Take one down, pass it around, " . ($beer-1) . "bottles of beer on the wall.";
 	--$beer;	
 } while ($beer > 0);
 echo "<br>";
