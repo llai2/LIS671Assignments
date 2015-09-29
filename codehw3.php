@@ -9,23 +9,24 @@ $bookdata = array (
 	array("Programming PHP", "Kevin Tatroe", 26, "Paperback", 28.96),
 );
 
-//create a function that prints out all the data 
+//create a function that prints out all the data in a table format
 function bookCount($books){
-	echo "<table>";
+echo "<table>";
 for ($y = 0; $y <=4; $y++)
 {
-
+	echo "<tr>";
 for ($x = 0; $x <= 4; $x++)
 	{
-	echo "<table border=\"1\">";
-	echo "<tr>";
-	echo "<td>", $books[$x][$y] , "</td>";
-	echo "</tr>";
-		}
-	echo "</table>";
 
+
+	echo "<td>", $books[$x][$y] , "</td>";
+
+		}
+	echo "</tr>";
 }
 }
+echo "</table>";
+
 
 //call the function once to display the data
 $callOnce = bookCount($bookdata);
@@ -79,7 +80,7 @@ echo "Needed ".$tossCount." for ". $numOfTimes . "in a row <br>";
 
 }
 
-//call the function with the desired number of times
+
 coinToss2(4);
 
 
